@@ -17,3 +17,7 @@ circle.node:active {
   stroke:black;
   fill:transparent;
 }
+.node-connector{
+  stroke:blue;
+  fill:transparent;
+}
