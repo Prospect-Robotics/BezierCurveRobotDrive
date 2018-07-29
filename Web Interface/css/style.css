@@ -1,0 +1,19 @@
+
+circle.node {
+  r: 10px;
+  cx: 50px;
+  cy: 50px;
+  --stroke-a:0.8;
+  --fill-a:0.2;
+  stroke: rgba(255, 0, 0,var(--stroke-a));
+  fill: rgba(255, 0, 0,var(--fill-a));
+  cursor: crosshair;
+}
+circle.node:active {
+  stroke: rgba(0, 255, 0,var(--stroke-a));
+  fill: rgba(0, 255, 0,var(--fill-a));
+}
+#path{
+  stroke:black;
+  fill:transparent;
+}
