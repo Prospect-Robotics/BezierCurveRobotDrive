@@ -30,8 +30,9 @@ function drawCurve() {
   }
   export_text.innerText = "";
   for (var p of points) {
-    export_text.innerText += `[${p.toString(",")}]`;
+    export_text.innerText += `new Point(${p.toString(",")}),`;
   }
+  export_text.innerText = export_text.innerText.slice(0,-1);//remove last comma
   node_connectors.innerHTML = "";
   for (var i = 0; i + 1 < points.length; i += 2) {
     var line = document.createElementNS(svgns, "line");
