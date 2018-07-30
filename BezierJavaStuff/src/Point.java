@@ -13,6 +13,10 @@ public class Point {
 		this.y = (double) y;
 	}
 
+	public Point(double[] ds) {
+		this(ds[0],ds[1]);
+	}
+
 	public String toString() {
 		return "[" + x + "," + y + "]";
 	}

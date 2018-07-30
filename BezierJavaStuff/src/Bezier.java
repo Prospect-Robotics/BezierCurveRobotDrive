@@ -23,9 +23,6 @@ public class Bezier {
 	 * @param t
 	 *            - double value between 0 and 1
 	 * @return point along curve <b>not evenly spaced</b> <br>
-	 *         <a href=
-	 *         "https://gamedev.stackexchange.com/questions/5373/moving-ships-between-two-planets-along-a-bezier-missing-some-equations-for-acce/5427#5427">
-	 *         read here for explanation</a>
 	 */
 	public Point getPoint(double t) {
 		double x = ((1 - t) * (1 - t) * (1 - t)) * a.x + 3 * ((1 - t) * (1 - t)) * t * b.x + 3 * (1 - t) * (t * t) * c.x
