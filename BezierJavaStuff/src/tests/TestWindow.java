@@ -24,6 +24,14 @@ public class TestWindow extends JDialog {
 		this.add(imgLabel);
 		this.pack();
 	}
+	
+	public void drawLine(Point p1,Point p2,Color color) {
+		g2d.setPaint(color);
+		g2d.drawLine((int)p1.x,(int)p1.y,(int)p2.x,(int)p2.y);
+	}
+	public void drawLine(Point p1,Point p2) {
+		drawLine(p1,p2,Color.black);
+	}
 
 	public void drawPoint(Point p,int radius,Color color) {
 		g2d.setPaint(color);
