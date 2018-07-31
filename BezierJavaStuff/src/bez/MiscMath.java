@@ -1,3 +1,4 @@
+package bez;
 
 public class MiscMath {
 	public static double slope(Point a, Point b) {

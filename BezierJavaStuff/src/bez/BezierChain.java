@@ -1,3 +1,4 @@
+package bez;
 import java.util.ArrayList;
 
 public class BezierChain {
