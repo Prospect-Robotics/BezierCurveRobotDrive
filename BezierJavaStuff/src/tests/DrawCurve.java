@@ -16,12 +16,6 @@ public class DrawCurve {
 			Point p1 = curve.getPoint(t);
 			Point p2 = curve.getPoint(t + step);
 			window.drawLine(p1,p2);
-			try {
-				Thread.sleep(100);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 			window.repaint();
 		}
 		
