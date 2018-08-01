@@ -11,7 +11,7 @@ public class Bezier {
 	Point b;
 	Point c;
 	Point d;
-
+	
 	public Bezier(Point a, Point b, Point c, Point d) {
 		this.a=a;
 		this.b=b;
